@@ -4,8 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        expected = len(nums) * (len(nums) + 1) // 2
-        actual = sum(nums)
-        return expected - actual
+        for i in range(len(nums) + 1):
+            if i not in nums:
+                return i
         
         
