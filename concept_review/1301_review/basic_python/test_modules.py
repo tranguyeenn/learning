@@ -1,5 +1,0 @@
-courseCode = "CSC 1301"
-courseName = "Principles of Computer Science 1301"
-professorName = "redacted"
-courseTime = "11:00am - 12:15pm"
-location = "Aderhold Learning Center, Rm 24"
