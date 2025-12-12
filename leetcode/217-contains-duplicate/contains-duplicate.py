@@ -5,9 +5,8 @@ class Solution(object):
         :rtype: bool
         """
         noDup = set(nums)
-        seen = list(noDup)
 
-        if len(seen) == len(nums):
+        if len(noDup) == len(nums):
             return False
         else:
             return True
