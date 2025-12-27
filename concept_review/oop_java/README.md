@@ -1,4 +1,4 @@
-# Java OOP Curriculum (VS Code)
+# Java OOP 
 
 ## Purpose
 
