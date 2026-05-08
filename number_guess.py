@@ -1,7 +1,6 @@
 '''
 Description: A simple number guessing game where the player tries to guess a randomly generated number between 1 and 100. 
-The game provides feedback on whether the guess is too low, too high, or correct. The player has a limited number of 
-attempts to guess the number correctly.
+The game provides feedback on whether the guess is too low, too high, or correct. The player has a limited number of attempts to guess the number correctly.
 '''
 
 import random
