@@ -59,32 +59,33 @@ def hard(user):
         statement = print(f"Game over! The number was {number_to_guess}.")
     return user, attempts, statement
 
-print("Welcome to the Number Guessing Game!")
-print("There is 3 levels, please select one of them: ")
-print("1. Easy (10 attempts)")
-print("2. Medium (5 attempts)")
-print("3. Hard (3 attempts)")
+if __name__ == "__main__":
+    print("Welcome to the Number Guessing Game!")
+    print("There is 3 levels, please select one of them: ")
+    print("1. Easy (10 attempts)")
+    print("2. Medium (5 attempts)")
+    print("3. Hard (3 attempts)")
 
-level_attempts = {'1': 10, '2': 5, '3': 3}
+    level_attempts = {'1': 10, '2': 5, '3': 3}
 
-level = input("Enter the level (1, 2, or 3): ") 
+    level = input("Enter the level (1, 2, or 3): ") 
 
-while level not in ['1', '2', '3']:
-    print("Invalid input. Please enter 1, 2, or 3.")
-    level = input("Enter the level (1, 2, or 3): ")
+    while level not in ['1', '2', '3']:
+        print("Invalid input. Please enter 1, 2, or 3.")
+        level = input("Enter the level (1, 2, or 3): ")
 
-print(f"You have selected level {level}. You have {level_attempts[level]} attempts to guess the number between 1 and 100.")
+    print(f"You have selected level {level}. You have {level_attempts[level]} attempts to guess the number between 1 and 100.")
 
-print()
-user = int(input("Enter your guess: "))
-
-while user < 1 or user > 100:
-    print("Invalid input. Please enter a number between 1 and 100.")
+    print()
     user = int(input("Enter your guess: "))
 
-if level == '1':
-    easy(user)
-elif level == '2':
-    medium(user)
-else:
-    hard(user)
+    while user < 1 or user > 100:
+        print("Invalid input. Please enter a number between 1 and 100.")
+        user = int(input("Enter your guess: "))
+
+    if level == '1':
+        easy(user)
+    elif level == '2':
+        medium(user)
+    else:
+        hard(user)
