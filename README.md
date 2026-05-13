@@ -2,107 +2,137 @@
 
 > building things, breaking things, fixing things.
 
-tracking what i learn so i can stop pretending i'm “not improving” every 3 business days.
+tracking progress so i stop acting like i’ve learned nothing after every difficult project.
 
 ---
 
 # goals
 
-- become genuinely good at python
-- build projects without ai hand-holding
-- strengthen problem-solving + coding logic
-- learn backend + ml systems properly
-- stop fearing harder projects
+- become genuinely strong at python
+- build projects independently
+- improve problem-solving + coding logic
+- learn backend systems properly
+- understand ml beyond surface-level tutorials
+- get comfortable with harder projects instead of avoiding them
 
 ---
 
 # current focus
 
 ## python fundamentals
-learning:
+
+currently practicing:
 - variables
 - conditionals
 - loops
 - functions
 - dictionaries
-- basic program structure
+- program structure
 - input validation
 
-status:
-- comfortable with basics
-- need more repetition with abstraction + program design
+current status:
+- comfortable with core syntax
+- improving abstraction + program organization
+- still building confidence with problem-solving independently
 
 ---
 
 # projects
 
 ## number guessing game
-date started: may 2026
+started: may 2026
 
 concepts practiced:
 - while loops
 - conditionals
 - functions
 - random module
-- user input validation
+- input validation
 - dictionaries
 
 what i learned:
-- repetitive logic can be abstracted
-- dictionaries can control program behavior
-- writing the repetitive version first helps reveal patterns
+- repetitive logic can usually be abstracted
+- dictionaries can simplify program behavior
+- writing messy logic first often reveals cleaner structure later
+- optimization makes more sense after understanding the repetitive version
 
 future improvements:
-- merge difficulty functions into one
+- replay system
 - cleaner game flow
-- replay option
 - exception handling
+- refactor repeated logic into reusable functions
+
+---
+
+## pomodoro timer
+started: may 2026
+
+concepts practiced:
+- loops
+- functions
+- time module
+- formatting output
+- menu systems
+- basic program flow
+
+what i learned:
+- breaking programs into smaller functions makes logic easier to manage
+- input validation matters more than expected
+- even simple terminal programs require thinking about user experience
+
+future improvements:
+- customizable break lengths
+- sound notifications
+- session tracking
+- file saving
 
 ---
 
 # things i struggled with
 
-- thinking through loop conditions
-- organizing repeated logic
-- deciding when to use functions
+- designing loop conditions cleanly
+- recognizing when logic should become a function
+- avoiding repetitive code
+- thinking through program flow before coding
 
 ---
 
 # mini wins
 
-- wrote a complete program independently
-- debugged logic myself
-- understood why optimization was possible instead of blindly copying it
+- completed programs independently
+- debugged logic without copying solutions
+- started understanding *why* abstractions help
+- becoming less intimidated by blank files
 
 ---
 
-# next things to learn
+# next topics
 
-- classes
+- classes + object-oriented programming
 - file handling
 - modules
 - APIs
-- object-oriented programming
-- basic data structures
-- async python
 - sqlite
+- data structures
+- async python
+- backend architecture basics
 
 ---
 
 # future project ideas
 
-- task/reminder cli
+- task/reminder CLI
 - terminal music player
-- student burnout tracker
+- burnout tracker
 - recommendation system
 - scientific computing mini-projects
-- ml-based stress detection
+- ML-based stress detection
 
 ---
 
 # reminder to self
 
-good programmers are not people who magically know everything.
+good programmers are not people who instantly know the answer.
 
 they are people who:
 - stay curious long enough
