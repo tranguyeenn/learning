@@ -1,8 +1,15 @@
 # learning log
-
 > building things, breaking things, fixing things.
 
 tracking progress so i stop acting like i’ve learned nothing after every difficult project.
+
+---
+
+## Actual Learning Log
+
+Full document with notes, projects, struggles, and progress:
+
+[View learning log](https://docs.google.com/document/d/1Z6y-5tDoqvpw3-9Hb7u7ddhDjvA6swnR_5VASgOkq5g/edit?usp=sharing)
 
 ---
 
