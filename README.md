@@ -1,7 +1,7 @@
 # learning log
 > building things, breaking things, fixing things.
 
-tracking progress so i stop acting like i’ve learned nothing after every difficult project.
+tracking progress so i stop acting like i've learned nothing after every difficult project.
 
 ---
 
@@ -10,6 +10,16 @@ tracking progress so i stop acting like i’ve learned nothing after every diffi
 Full document with notes, projects, struggles, and progress:
 
 [View learning log](https://docs.google.com/document/d/1Z6y-5tDoqvpw3-9Hb7u7ddhDjvA6swnR_5VASgOkq5g/edit?usp=sharing)
+
+---
+
+## repo
+
+| project | run |
+|---|---|
+| number guessing game | `python number_guess.py` |
+| pomodoro timer | `python pomodoro_cli.py` |
+| terminal tracker | `python terminal-tracker/main.py` |
 
 ---
 
@@ -26,21 +36,20 @@ Full document with notes, projects, struggles, and progress:
 
 # current focus
 
-## python fundamentals
+## beyond basics
 
 currently practicing:
-- variables
-- conditionals
-- loops
-- functions
-- dictionaries
-- program structure
-- input validation
+- multi-file program structure
+- file handling (json persistence)
+- custom exceptions
+- pathlib + datetime
+- aggregating data across files
+- input validation at scale
 
 current status:
-- comfortable with core syntax
-- improving abstraction + program organization
-- still building confidence with problem-solving independently
+- comfortable with core syntax and small scripts
+- can structure a multi-module cli from scratch
+- still building confidence with oop and larger refactors
 
 ---
 
@@ -95,12 +104,45 @@ future improvements:
 
 ---
 
+## terminal tracker
+started: may 2026 · status: complete
+
+a cli for logging daily mood, energy, hours worked, and tasks. entries persist as json files; the app surfaces stats, streaks, and burnout-style recommendations from the last 30 days.
+
+**modules:** `add_entry`, `view_entries`, `delete_entries`, `stats`, `recommendations`, `streaks_counter`, `main`
+
+concepts practiced:
+- multi-file project layout
+- json read/write
+- pathlib + os
+- datetime + timedelta
+- custom exceptions (`EnergyLevelError`, `HoursWorkedError`, `DuplicateEntryError`)
+- aggregating data across files
+- sorting and date logic
+- menu-driven cli
+
+what i learned:
+- splitting features into modules keeps each file manageable
+- file persistence forces you to think about data shape upfront
+- validation and error handling matter more once data is saved
+- reading many small files is a workable pattern before reaching for a database
+
+future improvements:
+- refactor shared file-loading logic into one module
+- classes for entries instead of raw dicts
+- sqlite instead of per-day json files
+- fix `add_entry.py` running on import (guard with `if __name__ == "__main__"`)
+
+---
+
 # things i struggled with
 
 - designing loop conditions cleanly
 - recognizing when logic should become a function
 - avoiding repetitive code
 - thinking through program flow before coding
+- organizing logic across multiple files without duplication
+- file paths and where the program expects to run from
 
 ---
 
@@ -110,16 +152,17 @@ future improvements:
 - debugged logic without copying solutions
 - started understanding *why* abstractions help
 - becoming less intimidated by blank files
+- shipped a multi-module project with persistence and analytics
 
 ---
 
 # next topics
 
 - classes + object-oriented programming
-- file handling
-- modules
-- APIs
+- refactoring duplicated logic into shared modules
 - sqlite
+- modules and packaging
+- APIs
 - data structures
 - async python
 - backend architecture basics
@@ -130,8 +173,7 @@ future improvements:
 
 - task/reminder CLI
 - terminal music player
-- burnout tracker
-- recommendation system
+- recommendation system (beyond rule-based)
 - scientific computing mini-projects
 - ML-based stress detection
 
