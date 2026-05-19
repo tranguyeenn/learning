@@ -19,6 +19,7 @@ Full document with notes, projects, struggles, and progress:
 |---|---|
 | number guessing game | `python number_guess.py` |
 | pomodoro timer | `python pomodoro_cli.py` |
+| rock paper scissors | `python rock_paper_scissor.py` |
 | terminal tracker | `python terminal-tracker/main.py` |
 
 ---
@@ -56,7 +57,9 @@ current status:
 # projects
 
 ## number guessing game
-started: may 2026
+started: may 2026 · status: complete
+
+guess a random number between 1 and 100. pick easy, medium, or hard for different attempt limits.
 
 concepts practiced:
 - while loops
@@ -67,21 +70,17 @@ concepts practiced:
 - dictionaries
 
 what i learned:
-- repetitive logic can usually be abstracted
-- dictionaries can simplify program behavior
-- writing messy logic first often reveals cleaner structure later
-- optimization makes more sense after understanding the repetitive version
-
-future improvements:
-- replay system
-- cleaner game flow
-- exception handling
-- refactor repeated logic into reusable functions
+- while loops work well for “keep asking until input is valid”
+- a dictionary can map level choices to attempt counts without extra conditionals
+- duplicating easy/medium/hard functions made it obvious when logic should be shared
+- separating game rules into functions keeps the main script readable
 
 ---
 
 ## pomodoro timer
-started: may 2026
+started: may 2026 · status: complete
+
+a terminal pomodoro with a live countdown and an optional 5-minute break after each work session.
 
 concepts practiced:
 - loops
@@ -92,15 +91,32 @@ concepts practiced:
 - basic program flow
 
 what i learned:
-- breaking programs into smaller functions makes logic easier to manage
-- input validation matters more than expected
-- even simple terminal programs require thinking about user experience
+- `time.sleep()` plus formatted output can drive a real-time countdown in the terminal
+- `end="\r"` lets one line update in place instead of printing every second
+- try/except catches bad numeric input before the timer starts
+- a simple menu loop is enough structure for start vs exit without overcomplicating things
 
-future improvements:
-- customizable break lengths
-- sound notifications
-- session tracking
-- file saving
+---
+
+## rock paper scissors
+started: may 2026 · status: complete
+
+play rock paper scissors against the computer in a loop, with running scores until you quit.
+
+concepts practiced:
+- functions
+- random module
+- while loops
+- conditionals
+- score tracking
+- input validation
+- `if __name__ == "__main__"`
+
+what i learned:
+- putting all win/loss/tie rules in `winner()` keeps the main game loop simple
+- recursion can re-prompt on bad input and re-run the same logic with valid data
+- score variables outside the round loop persist across multiple plays
+- `if __name__ == "__main__"` keeps the file runnable without side effects on import
 
 ---
 
@@ -123,15 +139,10 @@ concepts practiced:
 
 what i learned:
 - splitting features into modules keeps each file manageable
-- file persistence forces you to think about data shape upfront
-- validation and error handling matter more once data is saved
-- reading many small files is a workable pattern before reaching for a database
-
-future improvements:
-- refactor shared file-loading logic into one module
-- classes for entries instead of raw dicts
-- sqlite instead of per-day json files
-- fix `add_entry.py` running on import (guard with `if __name__ == "__main__"`)
+- one json file per day is a simple persistence model before sqlite
+- custom exceptions make validation failures explicit instead of buried in if/else
+- aggregating entries across files is how stats, streaks, and recommendations are built
+- date logic (`datetime`, `timedelta`) is required once data spans multiple days
 
 ---
 
