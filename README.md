@@ -148,45 +148,52 @@ what i learned:
 
 # things i struggled with
 
-- designing loop conditions cleanly
-- recognizing when logic should become a function
-- avoiding repetitive code
-- thinking through program flow before coding
-- organizing logic across multiple files without duplication
-- file paths and where the program expects to run from
+- deleting copy-pasted blocks instead of leaving three nearly identical functions
+- deciding whether to ship or refactor when the program already works
+- following an error through imports when the failure shows up in the wrong file
+- streak math and sorting dates without mixing up today vs yesterday
+- using the same field names everywhere so stats don’t silently skip data
+- knowing when recursion helps vs when a plain loop is clearer
+- remembering which folder to run from so json paths resolve
+- switching from “a bunch of dicts” to thinking in classes
 
 ---
 
 # mini wins
 
-- completed programs independently
-- debugged logic without copying solutions
-- started understanding *why* abstractions help
-- becoming less intimidated by blank files
-- shipped a multi-module project with persistence and analytics
+- shipped four working clis without abandoning them halfway
+- stored real daily logs and built stats on top of them
+- raised custom errors instead of only printing and returning
+- read and wrote json across many files in one app
+- isolated rock-paper-scissors rules so the main loop stayed short
+- traced multi-file bugs until the behavior matched what i intended
+- treated the readme as a log, not a one-time readme dump
 
 ---
 
 # next topics
 
-- classes + object-oriented programming
-- refactoring duplicated logic into shared modules
-- sqlite
-- modules and packaging
-- APIs
-- data structures
-- async python
-- backend architecture basics
+- classes and object-oriented design
+- a single shared module for loading and saving entries
+- sqlite as the backend for terminal tracker
+- packaging, imports, and proper script entrypoints
+- automated tests for edge cases in streaks and averages
+- calling and building simple http apis
+- classic data structures when dicts stop being enough
+- async python and a small web framework intro
 
 ---
 
 # future project ideas
 
-- task/reminder CLI
-- terminal music player
-- recommendation system (beyond rule-based)
-- scientific computing mini-projects
-- ML-based stress detection
+- task cli with due dates, reminders, and saved state
+- terminal tracker rebuilt on sqlite with less repeated code
+- habit dashboard that plots energy and hours over time
+- cli that pulls weather or headlines from the internet
+- flashcard drill app driven by a json deck
+- minimal rest api with a real database behind it
+- short numpy or pandas exercises for numerics
+- mood classifier trained on my own tracker history
 
 ---
 
