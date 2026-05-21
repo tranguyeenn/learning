@@ -13,7 +13,6 @@ progress lives in the readmes below so it’s obvious what’s actually been bui
 |---|---|---|
 | `python/` | terminal clis and small projects | [python/README.md](python/README.md) |
 | `java/` | jvm programs — packages, compile, run | [java/app/README.md](java/app/README.md) |
-| `orbit/` | path to understand and rebuild orbit features | [orbit/README.md](orbit/README.md) |
 
 ---
 
@@ -22,8 +21,6 @@ progress lives in the readmes below so it’s obvious what’s actually been bui
 full notes, struggles, and longer-form progress:
 
 [View learning log](https://docs.google.com/document/d/1Z6y-5tDoqvpw3-9Hb7u7ddhDjvA6swnR_5VASgOkq5g/edit?usp=sharing)
-
-orbit session notes: [orbit/notes/LEARNING_LOG.md](orbit/notes/LEARNING_LOG.md) · feature map: [orbit/notes/ORBIT_MAP.md](orbit/notes/ORBIT_MAP.md)
 
 ---
 
