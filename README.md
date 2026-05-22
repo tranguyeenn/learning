@@ -1,34 +1,38 @@
-# learning
+# learning log
 > building things, breaking things, fixing things.
 
-personal repo for python practice, java practice, and studying orbit enough to understand the architecture — not just run it.
+a repo for tracking what i actually build — not what i vaguely intend to learn someday.
 
-progress lives in the readmes below so it’s obvious what’s actually been built.
-
----
-
-## structure
-
-| folder | what it is | detailed log |
-|---|---|---|
-| `python/` | terminal clis and small projects | [python/README.md](python/README.md) |
-| `java/` | jvm programs — packages, compile, run | [java/app/README.md](java/app/README.md) |
+terminal projects live in python. the browser dashboard lives in javascript. each folder has its own readme with project details, struggles, and notes.
 
 ---
 
-## actual learning log
+## learning log
 
-full notes, struggles, and longer-form progress:
+longer notes and reflections:
 
 [View learning log](https://docs.google.com/document/d/1Z6y-5tDoqvpw3-9Hb7u7ddhDjvA6swnR_5VASgOkq5g/edit?usp=sharing)
 
 ---
 
+## repo layout
+
+```
+learning/
+├── python/                          → [python/README.md](python/README.md)
+│   ├── number_guess.py
+│   ├── pomodoro_cli.py
+│   ├── rock_paper_scissor.py
+│   └── terminal-tracker/
+└── javascript/
+    └── personal-dashboard/          → [javascript/personal-dashboard/README.md](javascript/personal-dashboard/README.md)
+```
+
+---
+
 ## quick run
 
-run from the repo root unless noted.
-
-### python
+from the repo root:
 
 | project | command |
 |---|---|
@@ -37,22 +41,18 @@ run from the repo root unless noted.
 | rock paper scissors | `python python/rock_paper_scissor.py` |
 | terminal tracker | `python python/terminal-tracker/main.py` |
 
-### java
-
-| project | command |
-|---|---|
-| calculator | `javac java/app/Calculator.java && java -cp java/app app.Calculator` |
+the personal dashboard is browser-based — see the javascript readme when the app is runnable.
 
 ---
 
 # goals
 
-- get strong at fundamentals in more than one language
 - build small projects independently before reaching for frameworks
-- improve problem-solving and program structure
-- learn backend and desktop architecture on purpose, not by accident
-- understand orbit deeply enough to explain and rebuild its features
-- stay comfortable with harder projects instead of avoiding them
+- improve problem-solving and how i structure programs
+- get strong at python fundamentals and apply them without tutorials
+- learn javascript through real features on a dashboard i actually use
+- understand data flow, state, and persistence on the frontend
+- get comfortable with harder projects instead of avoiding them
 
 ---
 
@@ -60,82 +60,73 @@ run from the repo root unless noted.
 
 ## python
 - classes and object-oriented design
-- less duplicated logic across modules
-- sqlite as a step up from json files
+- shared modules instead of duplicated file-loading logic
+- sqlite as the next step after json files
 
-see [python/README.md](python/README.md) for projects, struggles, and next steps.
+full write-ups → [python/README.md](python/README.md)
 
-## java
-- packages, compile/run workflow, and jdk errors
-- extracting logic out of `main`
-- matching folder layout to package names
+## javascript
+- personal dashboard built feature by feature
+- dom, events, localStorage, and rendering before reaching for react
+- small modules: calendar, tasks, focus timer, daily check-in
 
-see [java/app/README.md](java/app/README.md).
-
-## orbit
-- one concept, one tiny build, one orbit connection per session
-- mapping visible features before reading the whole codebase
-
-see [orbit/README.md](orbit/README.md).
+full plan → [javascript/personal-dashboard/README.md](javascript/personal-dashboard/README.md)
 
 ---
 
-# projects at a glance
+# projects
 
-| project | track | started | status |
-|---|---|---|---|
-| number guessing game | python | may 2026 | complete |
-| pomodoro timer | python | may 2026 | complete |
-| rock paper scissors | python | may 2026 | complete |
-| terminal tracker | python | may 2026 | complete |
-| calculator | java | may 2026 | complete |
+| project | track | status |
+|---|---|---|
+| number guessing game | python | complete |
+| pomodoro timer | python | complete |
+| rock paper scissors | python | complete |
+| terminal tracker | python | complete |
+| personal dashboard | javascript | in progress |
 
-write-ups, concepts practiced, and what i learned for each project are in the track readmes.
+concepts practiced and what i learned for each finished project are in [python/README.md](python/README.md).
 
 ---
 
 # things i struggled with
 
-- refactoring copy-pasted code instead of shipping three versions of the same function
-- multi-file debugging when the error points at the wrong file
-- date and streak logic without off-by-one mistakes
-- knowing when to stop polishing and move to the next project
-- java package rules vs folder names — especially reserved `java.*` packages
-- switching between python’s run-anytime flow and compile-then-run in java
-- reading a large codebase without a feature map first
+- copy-pasting logic instead of refactoring when three functions do the same thing
+- debugging across multiple files when the traceback points somewhere unhelpful
+- streak and date math without off-by-one mistakes
+- knowing when the program is good enough to ship vs polish forever
+- keeping json field names consistent so stats don’t silently skip data
+- starting a frontend project without defaulting to tutorial-shaped code
 
 ---
 
 # mini wins
 
 - four finished python terminal projects
-- terminal tracker with json persistence, stats, streaks, and recommendations
-- first java program compiles and runs with proper `app` package layout
-- reorganized the repo into `python/`, `java/`, and `orbit/` instead of one flat mess
-- keeping readmes updated as a real learning log, not a one-time dump
+- built terminal tracker with json storage, stats, streaks, and recommendations
+- split the repo into `python/` and `javascript/` so tracks stay separate
+- documented progress in readmes instead of treating them as one-time files
+- defined a real dashboard project plan tied to actual study habits
 
 ---
 
 # next topics
 
-**python:** classes · shared modules · sqlite · pytest · simple apis
+**python:** classes · shared data layer · sqlite · pytest · simple apis
 
-**java:** methods outside `main` · loops and menus · `ArrayList` · try/catch · junit
-
-**orbit:** js fundamentals → react → typescript → tauri → per-feature architecture notes
+**javascript:** dom and events · localStorage · `setInterval` · `fetch` · date logic for calendar and streaks
 
 ---
 
 # future project ideas
 
-- task cli with due dates and persistence
-- terminal tracker v2 on sqlite
-- port a python cli game to java
-- orbit mini-widgets rebuilt in isolation before touching the real app
-- small rest api with a database
+- terminal tracker v2 with sqlite
+- task cli with due dates and saved state
 - habit charts from tracker data
+- weather or quote widgets on the dashboard
+- port a python game logic pattern into javascript
+- small rest api backed by a real database
 
-track-specific ideas live in [python/README.md](python/README.md) and [java/app/README.md](java/app/README.md).
+more ideas per track → [python/README.md](python/README.md) · [javascript/personal-dashboard/README.md](javascript/personal-dashboard/README.md)
 
 ---
 
